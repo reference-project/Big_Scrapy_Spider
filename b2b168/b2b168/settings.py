@@ -50,7 +50,6 @@ DEFAULT_REQUEST_HEADERS = {
     # "Host":"www.b2b168.com",
     # "Referer":"https://www.b2b168.com/",
     "Upgrade-Insecure-Requests":"1",
-    # "User-Agent":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36",
 }
 
 # Enable or disable spider middlewares
