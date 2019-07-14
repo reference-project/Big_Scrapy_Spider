@@ -52,7 +52,6 @@ DEFAULT_REQUEST_HEADERS = {
     # "cookie":"LiveWSLRW77021783=e0b725cea87f469c94f9bec2a9def1e6; NLRW77021783fistvisitetime=1561219508135; NLRW77021783visitecounts=1; NLRW77021783lastvisitetime=1561219526517; NLRW77021783visitepages=2; _GCWGuid=D3BE5D26-0304-5F94-0107-0A8F0D58D891; Hm_lvt_87381154dcd52df3d7d1362797d6c4dc=1561219890; Hm_lvt_a39a1bb1395dcbf5a2fd98bbce30ec99=1561256825,1561257692,1562940727; Hm_lvt_1feded28e200c1f62aa6738cb40e9f68=1561219890,1561256825,1561257692,1562940727; Hm_lpvt_1feded28e200c1f62aa6738cb40e9f68=1562940865; Hm_lpvt_a39a1bb1395dcbf5a2fd98bbce30ec99=1562940865",
     "referer":"https://ch.gongchang.com/",
     "upgrade-insecure-requests":"1",
-    # "user-agent":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36",
 }
 
 # Enable or disable spider middlewares
@@ -102,7 +101,7 @@ ITEM_PIPELINES = {
 
 MYSQL_HOST = 'localhost'
 MYSQL_USER = 'root'
-MYSQL_PASSWORD = ''
+MYSQL_PASSWORD = '' # 你的密码
 MYSQL_PORT = '3306'
 MYSQL_DBNAME = 'spider_data_base'
 
