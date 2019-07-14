@@ -100,10 +100,9 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-# MYSQL_HOST = '192.168.1.124'
 MYSQL_HOST = 'localhost'
 MYSQL_USER = 'root'
-MYSQL_PASSWORD = 'ping31415@'
+MYSQL_PASSWORD = ''
 MYSQL_PORT = '3306'
 MYSQL_DBNAME = 'spider_data_base'
 
