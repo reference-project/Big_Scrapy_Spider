@@ -112,10 +112,8 @@ class B2bSpider(scrapy.Spider):
         pattern4 = re.compile(r'传　　真： (.*?)<br />', re.S)
         pattern5 = re.compile(r'移动电话： (.*?)<br />', re.S)
         pattern6 = re.compile(r'<p>地址：(.*?)</p>', re.S)
-        # 湖北省</a> 老河口市赞南村5组花园路西段
         pattern7 = re.compile(r'<dt>公司地址：</dt><dd><a href=".*?" title=".*?">(.*?)</dd>', re.S)
         pattern8 = re.compile(r'<dt>固定电话：</dt><dd>(.*?)</dd>', re.S)
-        # <dt>联系人：</dt><dd>李文焕先生（）</dd>
         pattern9 = re.compile(r'<dt>联系人：</dt><dd>(.*?)</dd>', re.S)
         pattern10 = re.compile(r'<dt>移动电话：</dt><dd>(.*?)</dd>', re.S)
         pattern11 = re.compile(r'<dt>传真号码：</dt><dd>(.*?)</dd>', re.S)
@@ -307,8 +305,6 @@ class B2bSpider(scrapy.Spider):
     def search_linkman(self, text):
         if text:
             if len(text) >3:
-                # text = re.sub(r'\s|\r|\n|\t|联系人：|公司联系人：|：|暂未提供|未填写', '', text)[:3]
-                # text = re.sub(r'\s|\r|\n|\t|先生|女士|小姐|联系人：|公司联系人：|：|暂未提供|未填写', '', text)[:3]
                 text = re.sub(r'\s|\r|\n|\t|先生|女士|小姐|联系人：|公司联系人：|：|暂未提供|未填写', '', text)
                 return text
             else:
@@ -320,7 +316,6 @@ class B2bSpider(scrapy.Spider):
     def search_address(self, text):
         if text:
             try:
-                # '公司地址：中国  广东  广州  番禺区沙头街嘉品二街二号1栋1529'
                 text = re.sub(r'\s|\r|\n|\t|地址|公司地址|公司地址：|：|暂未提供|未填写', '', text)
                 return text
             except:
